@@ -1,0 +1,537 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.icon_1 {
+    text-align: center;
+    border: 1px solid white;
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 3px;
+}
+
+.icon_2 {
+    border-radius: 7px 7px 3px 3px;
+    text-align: center;
+    border: 1px solid white;
+    position: absolute;
+    height: 13px;
+    width: 17px;
+    background-color: white;
+    margin-top: 14px;
+}
+
+.book_reserved {
+    background-color: rgb(224, 224, 224);
+    color: rgb(141, 141, 141);
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+    display: block;
+}
+
+.badge {
+    background-color: green;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    max-width: fit-content;
+}
+
+.dot {
+    background-color: greenyellow;
+    padding: 0px 6px 0px 6px;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.noti-dot {
+    background-color: red;
+    position: absolute;
+    padding: 0px 5px 0px 5px;
+    margin-top: -8px;
+    margin-left: -6px;
+    font-size: 70%;
+}
+
+.invisible {
+    display: none;
+}
+
+.links {
+    font-size: 110%;
+    color: maroon;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.links:hover {
+    color: black;
+}
+
+#footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: maroon;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0%;
+    /* width: 745px; */
+    width: 900px;
+}
+
+
+/*Column CLass*/
+
+.column-1 {
+    float: left;
+    width: 10%;
+    height: auto;
+}
+
+.column-2 {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+.column-3 {
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+.column-4 {
+    float: left;
+    width: 40%;
+    height: auto;
+}
+
+.column-5 {
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+.column-6 {
+    float: left;
+    width: 60%;
+    height: auto;
+}
+
+.column-7 {
+    float: left;
+    width: 70%;
+    height: auto;
+}
+
+.column-8 {
+    float: left;
+    width: 80%;
+    height: auto;
+}
+
+.column-9 {
+    float: left;
+    width: 90%;
+    height: auto;
+}
+
+.column-10 {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.lbl_txt {
+    width: 200px;
+}
+
+.tbl_default {
+    background-color: white;
+    width: 100%;
+    /* border: 0; */
+    border-radius: 5px;
+    margin-top: 10px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tbl_default th {
+    text-align: left;
+    background-color: #ffc799;
+    border-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.tbl_default td {
+    text-align: left;
+    border: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.tbl_default tr:hover {
+    text-align: left;
+    border: none;
+    padding: 10px;
+    background-color: #fceebf;
+    margin: 0;
+}
+
+.active-row {
+    background-color: #fce4d5;
+}
+
+.tbl_default tr {
+    border-bottom: 0.5px solid maroon;
+}
+
+.cont-card {
+    background-color: #fff6d9;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px 10px 5px 10px;
+    margin-bottom: 50px;
+    margin-top: 50px
+}
+
+.text-center {
+    text-align: center;
+}
+
+.cont-card p {
+    margin: 5px;
+}
+
+#logo h1 {
+    margin-bottom: -10px;
+    letter-spacing: 1px;
+    color: maroon;
+    font-size: 260%;
+}
+
+#logo h2 {
+    font-size: 160%;
+    letter-spacing: -1px;
+    color: black;
+}
+
+#header {
+    /*height: 80px;*/
+    margin: 0 auto;
+    /* width: 751px; */
+    width: 900px;
+    height: 10%;
+}
+
+#content {
+    height: 73%;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    /* width: 751px; */
+    width: 900px;
+    position: relative;
+}
+
+#navigation {
+    background-color: #590707;
+    border-top: 2px solid maroon;
+    width: 900px;
+    margin: 0 auto;
+    height: 40px;
+    border-bottom: 2px double maroon;
+    border-radius: 20px;
+}
+
+.menu-item-center {
+    margin-top: 10px;
+}
+
+.li-left {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.li-right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#navigation li {
+    /*float: left;*/
+    float: left;
+    width: 16.66%;
+    height: 40px;
+    /*Remove Bullets*/
+    list-style: none;
+}
+
+#navigation .hover_menu:hover {
+    background: #f2eae9;
+    color: maroon;
+}
+
+#navigation a {
+    text-align: center;
+    color: white;
+    font-size: 110%;
+}
+
+#navigation .active {
+    background: #e3e3e3;
+    color: #777;
+}
+
+.textbox_form {
+    border: 0.3px solid black;
+    border-radius: 7px;
+    font-size: 10pt;
+    /* padding: 5px 3px 5px 3px; */
+    padding: 8px 12px 8px 12px;
+    width: 100%;
+}
+
+.btn {
+    border: 0.3px solid black;
+    border-radius: 4px;
+    font-size: 10pt;
+    padding: 8px 12px 8px 12px;
+}
+
+.btn:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.btn-default {
+    background-color: maroon;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn-default:hover {
+    background-color: #ffebeb;
+    color: maroon;
+    font-weight: bolder;
+}
+
+.btn-red {
+    background-color: white;
+    color: #eb0c0c;
+    border: 0.5px solid #eb0c0c;
+    font-weight: bolder;
+}
+
+.btn-red:hover {
+    background-color: #eb0c0c;
+    color: white;
+    border: 0.5px solid white;
+    font-weight: bolder;
+}
+
+.btn-yellow {
+    background-color: white;
+    color: #ffc400;
+    border: 1px solid #ffc400;
+    font-weight: bolder;
+}
+
+.btn-yellow:hover {
+    background-color: #ffc400;
+    color: white;
+    border: 1px solid white;
+    font-weight: bolder;
+}
+
+.btn-green-fill {
+    background-color: rgb(35, 175, 0);
+    color: #ffffff;
+    border: 1px solid #1a9c00;
+    font-weight: bolder;
+}
+
+.btn-green-fill:hover {
+    background-color: white;
+    color: #1a9c00;
+    border: 1px solid #1a9c00;
+    font-weight: bolder;
+}
+
+.btn-blue-fill {
+    background-color: rgb(0, 86, 216);
+    color: #ffffff;
+    border: 1px solid #00379c;
+    font-weight: bolder;
+}
+
+.btn-blue-fill:hover {
+    background-color: white;
+    color: #00379c;
+    border: 1px solid rgb(0, 86, 216);
+    font-weight: bolder;
+}
+
+.warn-cont {
+    background-color: #ffb1ac;
+    color: red;
+}
+
+.cont-yellow-message {
+    background-color: #ffedba;
+    border: 0.5px solid #f7b700;
+    color: #f7b700;
+    border-radius: 10px;
+    width: 730px;
+    padding: 5px 10px 5px 10px;
+    bottom: 20px;
+    position: fixed;
+}
+
+.cont-green-message {
+    background-color: #bfffc8;
+    border: 0.5px solid #0bba24;
+    color: #0bba24;
+    border-radius: 10px;
+    width: 730px;
+    padding: 10px;
+    bottom: 20px;
+    position: fixed;
+}
+
+.cont-red-message {
+    background-color: #ffe0e0;
+    border: 0.5px solid #e30909;
+    color: #e30909;
+    border-radius: 10px;
+    width: 730px;
+    padding: 5px 10px 5px 10px;
+    bottom: 20px;
+    position: fixed;
+}
+
+
+/* Hide the browser's default checkbox */
+
+td input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.remove_cbx_property input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkmark {
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(172, 170, 170);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    background-color: #eee;
+    color: rgb(172, 170, 170);
+}
+
+.checkmark:hover {
+    background-color: #fffd89;
+    color: #fcba03;
+    border: 1px solid #fcba03;
+}
+
+.checkmark h5 {
+    margin-top: -1.3px;
+    font-weight: bolder;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    color: white;
+    background-color: #fcba03;
+    border: 1px solid #fcba03;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.restricted {
+    background-color: rgb(224, 224, 224);
+}
+
+select option {
+    background-color: #ffe1d3;
+}
+
+input:read-only {
+    background-color: rgb(219, 219, 219);
+    color: #777;
+    border-color: #777;
+}

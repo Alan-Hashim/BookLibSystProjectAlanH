@@ -1,0 +1,93 @@
+<html>
+
+
+<head>
+    <title>
+        <?php 
+        echo $page_title; 
+        ?>
+    </title>
+    <link rel="stylesheet" href="includes/styles.css" type="text/css" media="screen" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<?php require ('includes/check_user.php'); ?>
+
+<body style="background-image: url('includes/Background/bg1.jpg');background-size:cover;background-attachment: fixed;">
+    <div id="header">
+        <div class="row">
+            <div class="column-3">
+                <h1 style="font-size: 440%; color:rgb(80, 0, 0); margin-top:-5px;">LIBRARY</h1>
+            </div>
+            <div class="column-1" style="margin-left:30px;">
+                <img id="logo" src="includes/Logo/logo2.png" height="70px" width="92px" />
+            </div>
+            <div class="column-5" id="logo" style="margin-left: -15px;">
+                <h1>BOOK</h1>
+                <h2 style="color:rgb(201, 47, 0)">DATABASE</h2>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div id="navigation">
+        <ul>
+
+            <?php 
+            $role = $_SESSION["role_id"];
+            switch($role){
+                case 1 : 
+                    echo "<a href='index.php'><li class='li-left hover_menu'><p class='menu-item-center'>Home Page</p></li></a>";
+                    echo "<a href='LoginList.php'><li class='hover_menu'><p class='menu-item-center'>Users</p></li></a>";
+                    echo "<a href='StudentList.php'><li class='hover_menu'><p class='menu-item-center'>Students</p></li></a>";
+                    
+                    echo "<a href='BookList.php'><li class='hover_menu'><p class='menu-item-center'>Book List";
+                        if($isVisible == "true")
+                        {
+                        echo 
+                        "<h6 class='badge' style='margin-top:-29px; margin-left:126px; background-color: red; padding:1px 4px;''>".
+                            $totalbookviewed.
+                        "</h6>";
+                        }
+                    echo "</p></li></a>";
+                    
+
+                    echo "<a href='IssueList.php'><li class='hover_menu'><p class='menu-item-center'>Issued Book</p></li></a>";
+                    echo "<a href='logout.php'><li class='li-right hover_menu'><p class='menu-item-center'>Logout</p></li></a>";
+                    break;
+
+                case 2 : 
+                    echo "<a href='index.php'><li class='li-left hover_menu'><p class='menu-item-center'>Home Page</p></li></a>";
+                    echo "<a href='StudentList.php'><li class='hover_menu'><p class='menu-item-center'>Students</p></li></a>";
+                    
+                    echo "<a href='BookList.php'><li class='hover_menu hover_menu'><p class='menu-item-center'>Book List";
+                        if($isVisible == "true")
+                        {
+                        echo 
+                        "<h6 class='badge' style='margin-top:-29px; margin-left:126px; background-color: red; padding:1px 4px;''>".
+                            $totalbookviewed.
+                        "</h6>";
+                        }
+                    echo "</p></li></a>";
+                    
+
+                    echo "<a href='IssueList.php'><li class='hover_menu'><p class='menu-item-center'>Issued Book</p></li></a>";
+                    echo "<li></li>";
+                    echo "<a href='logout.php'><li class='hover_menu li-right'><p class='menu-item-center'>Logout</p></li></a>";
+                    break;
+
+                case 3 :
+                    
+                    echo "<a href='index.php'><li class='hover_menu li-left'><p class='menu-item-center'>Home Page</p></li></a>";
+                    echo "<a href='BookList.php'><li class='hover_menu'><p class='menu-item-center'>Books</p></li></a>";
+                    echo "<a href='IssueListStudent.php'><li class='hover_menu'><p class='menu-item-center'>Issue a Book</p></li></a>";
+                    echo "<li></li>";
+                    echo "<li></li>";
+                    echo "<a href='logout.php'><li class='hover_menu li-right'><p class='menu-item-center'>Logout</p></li></a>";
+                    break;
+
+            }
+            ?>
+        </ul>
+    </div>
+    <br/>
+    <div id="content">
+        <?php include ('includes/message_popup.php'); ?>
